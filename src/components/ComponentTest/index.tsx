@@ -10,9 +10,9 @@ export const ComponentTest = () => {
     console.log(idade);
 
     const[list] = useState(["Guinho , Dudu , João"])
-    const handleName = (e) => {
+    /*const handleName = (e) => {
         setName(e.target.value);
-    };
+    };*/
 
     return (
         <Div>
