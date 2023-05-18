@@ -1,11 +1,13 @@
-import {ComponentTest} from './components/ComponentTest'
+import { Route ,Routes } from "react-router-dom";
+import {Locals} from "./pages/Locals";
+import {Local} from "./pages/Local";
 
-function App() {
+export function App() {
+
   return (
-    <div className="App">
-      <ComponentTest/>
-    </div>
+    <Routes>
+      <Route path="/" element={<Locals/>}/>
+      <Route path="/locals/*" element={<Local/>}/>
+    </Routes>
   )
 }
-
-export default App
